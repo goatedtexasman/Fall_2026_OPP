@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Animal {
+private:
+    int id;
+protected:
+    string name;
+    int age;
+public:
+    Animal(string n, int a, int i) : name(n), age(a), id(i) {}
+    void eat() { cout << name << " is eating.\n"; }
+};
